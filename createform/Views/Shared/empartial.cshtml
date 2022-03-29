@@ -1,0 +1,17 @@
+﻿@model createform.Models.userform
+
+<tr>
+<td>@Html.DisplayFor(modelItem => Model.id)  </td>
+<td>@Html.DisplayFor(modelItem => Model.firstname)  </td>
+<td>@Html.DisplayFor(modelItem => Model.lastname)  </td>
+<td>@Html.DisplayFor(modelItem => Model.email)  </td>
+<td>@Html.DisplayFor(modelItem => Model.address)  </td>
+<td>@Html.DisplayFor(modelItem => Model.countryid)  </td>
+<td>@Html.DisplayFor(modelItem => Model.stateid)</td>
+<td>@Html.DisplayFor(modelItem => Model.cityid)</td>
+<td>@Html.DisplayFor(modelItem => Model.number)</td> 
+<td><button type="button" class="btn btn-success" onclick="edit('@Html.DisplayFor(modelItem => Model.id) ')" data-toggle="modal" data-target="#myModal">
+  Edit
+</button></td>
+<td><button class="btn btn-danger">@Html.ActionLink("Delete", "Delete", "Home", new { @id=Model.id}, null)</button></td>
+</tr>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="usercascadModelStoreContainer" CdmEntityContainer="usercascadEntities">
+    <EntitySetMapping Name="city2">
+      <EntityTypeMapping TypeName="usercascadModel.city2">
+        <MappingFragment StoreEntitySet="city2">
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="cityname" ColumnName="cityname" />
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="countries">
+      <EntityTypeMapping TypeName="usercascadModel.country">
+        <MappingFragment StoreEntitySet="country">
+          <ScalarProperty Name="countryid" ColumnName="countryid" />
+          <ScalarProperty Name="countryname" ColumnName="countryname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empstates">
+      <EntityTypeMapping TypeName="usercascadModel.empstate">
+        <MappingFragment StoreEntitySet="empstate">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="countryid" ColumnName="countryid" />
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="age" ColumnName="age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="states1">
+      <EntityTypeMapping TypeName="usercascadModel.states1">
+        <MappingFragment StoreEntitySet="states1">
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+          <ScalarProperty Name="statename" ColumnName="statename" />
+          <ScalarProperty Name="countryid" ColumnName="countryid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
